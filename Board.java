@@ -33,14 +33,14 @@ public class Board{
         return str_tablero;
     }
 
-/*
-    public static void main(String[] args){
 
-        TicTacToe tt = new TicTacToe();
-        System.out.println(tt.mark(8,9,"X"));
-        System.out.println(tt.mark(1,2,"X"));
-        System.out.println(tt.toString());
-    }*/
+    public static void main(String[] args){
+//aqui estaba mal, tenia que crear el objeto tipo Board, estaba usando el mismo del TicTacToe
+        Board bb = new Board();
+        System.out.println(bb.mark(8,9,"X"));
+        System.out.println(bb.mark(1,2,"X"));
+        System.out.println(bb.toString());
+    }
 }
 
 
